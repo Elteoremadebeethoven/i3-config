@@ -6,7 +6,7 @@ You need to install:
 
 * font-awesome
 * picom
-* greenclip
+* [greenclip](https://github.com/erebe/greenclip)
 * rofi
 * rofi-calc
 * rofi-emoji
@@ -29,3 +29,5 @@ ln -s $HOME/.config/i3/bin/rofi-clip-images $HOME/.local/bin/rofi-clip-images
 ln -s $HOME/.config/i3/bin/rofi-open-terminal $HOME/.local/bin/rofi-open-terminal
 ln -s $HOME/.config/i3/bin/picom.conf $HOME/.config/picom.conf
 ```
+
+And add the permissions to the files inside `bin` folder.
