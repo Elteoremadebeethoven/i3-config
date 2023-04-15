@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ls -t /tmp/greenclip | \
+  while read A ; do  echo -en "$A\x00icon\x1f/tmp/greenclip/$A\n" ; done | \
+  rofi -config ~/.config/rofi/image_config.rasi -l 4 -dmenu | 
+  xargs -I FILE xclip -sel c -t image/png  /tmp/greenclip/FILE
+

@@ -1,0 +1,32 @@
+#!/bin/sh
+lock() {
+	i3lock -i $HOME/.local/wallpapers/bg3.jpg
+}
+
+case "$1" in
+	lock)
+		lock
+		;;
+	logout)
+		i3-msg exit
+		;;
+	suspend)
+		systemctl suspend && lock
+		# zzz && lock
+		;;
+	reboot)
+		systemctl reboot
+		# reboot now
+		;;
+	shutdown)
+		systemctl poweroff
+		# poweroff
+		;;
+	*)
+		echo "Usage $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
+		exit 2
+esac
+
+exit 0
+
+
