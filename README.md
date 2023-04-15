@@ -9,6 +9,7 @@ You need to install:
 * greenclip
 * rofi
 * rofi-calc
+* rofi-emoji
 * rofi-file-browser-extended
 * flameshot
 * sysstat
@@ -28,5 +29,3 @@ ln -s $HOME/.config/i3/bin/rofi-clip-images $HOME/.local/bin/rofi-clip-images
 ln -s $HOME/.config/i3/bin/rofi-open-terminal $HOME/.local/bin/rofi-open-terminal
 ln -s $HOME/.config/i3/bin/picom.conf $HOME/.config/picom.conf
 ```
-
-## Clone rofi config
